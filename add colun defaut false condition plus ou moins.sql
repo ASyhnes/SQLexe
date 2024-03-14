@@ -1,0 +1,3 @@
+ALTER TABLE Produit ADD COLUMN Premium BOOL DEFAULT FALSE;
+UPDATE Produit SET Premium = TRUE WHERE Prix > 200;
+

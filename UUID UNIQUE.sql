@@ -1,0 +1,6 @@
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+ALTER TABLE familly ALTER COLUMN id SET DEFAULT uuid_generate_v4();
+
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+ALTER TABLE fish ALTER COLUMN id SET DEFAULT uuid_generate_v4();
+
